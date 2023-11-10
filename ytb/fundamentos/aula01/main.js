@@ -58,6 +58,16 @@ const idade = 20;
 if(idade < 13){
 
     console.log("Criança");
-} else{
+}else if (idade <20) {
+    console.log("adolescente")
+}
+else{
     console.log("Adulto");
 };
+
+if (true){
+
+    console.log("isso executa");
+}
+
+
