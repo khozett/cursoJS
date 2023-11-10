@@ -33,7 +33,9 @@ const user = {
 
 
 //desestruturação
-const { andress, name } = user
+
+
+/**const { andress, name } = user
 
 
 function mostraIdade(user){
@@ -42,4 +44,11 @@ function mostraIdade(user){
 
 document.body.innerText = mostraIdade(user)
 
-//JSON.stringify({ endereco, name });
+//JSON.stringify({ endereco, name });*/
+
+
+//Rest operator
+
+const {name, ...rest} = user;
+
+document.body.innerText = JSON.stringify(rest)
