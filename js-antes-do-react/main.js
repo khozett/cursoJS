@@ -1,6 +1,20 @@
-//Nullish coalescing operator
+//objetos
 
 
-const idade = null;
+const user = {
+  name: 'Sérgio',
+  idade: 18,
+  endereco: {
+    rua: 'bla',
+    numero: '234'
+  },
 
-document.body.innerText = "Sua idade é: "+ (idade ?? 'Não informado');
+}
+
+
+
+//desestruturação
+const { endereco, name } = user
+
+
+document.body.innerText = JSON.stringify({ endereco, name });
