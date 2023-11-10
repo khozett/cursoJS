@@ -71,3 +71,47 @@ if (true){
 }
 
 
+//switch
+
+const fruta = "banana"
+
+switch(fruta){
+    case "mamao":
+        console.log("banana é a fruta");
+
+        break;
+
+    case "maça":
+        console.log("maça é a fruta");
+
+        break;
+
+
+        default:
+            console.log("fruta não encontrada");
+}
+
+
+
+//estruta de repetição (loop)
+
+
+//contador, condicao de limite, incremento
+
+for (let i = 0; i < 5; i++) {
+
+    console.log("valor de i é: "+i);
+};
+
+
+//while
+
+let k = 0;
+
+while (k < 5){
+
+    console.log("o valor de k é: " +k)
+
+    k++;
+
+};
