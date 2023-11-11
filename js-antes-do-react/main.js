@@ -1,15 +1,6 @@
 //objetos
 
 
-const user = {
-  name: 'Sérgio',
-  age: 18,
-  andress: {
-    street: 'bla',
-    number: '234'
-  },
-
-}
 
 
 //Nullish coalescing operator
@@ -49,6 +40,51 @@ document.body.innerText = mostraIdade(user)
 
 //Rest operator
 
-const {name, ...rest} = user;
+//const {name, ...rest} = user;
 
-document.body.innerText = JSON.stringify(rest)
+
+
+//optional  chaining
+
+
+const user = {
+  name: 'Sérgio',
+  age: 18,
+  andress: {
+    street: 'bla',
+    number: '234',
+    zip: {
+      code: '123456789',
+      city: 'sao paulo',
+    }
+  },
+
+}
+
+
+
+//document.body.innerText = user.andress ? user.andress.street: 'Nao informado';
+//document.body.innerText = user.andress?.zip.code ?? 'não informado';
+
+
+// métodos de array
+
+
+const array = [1, 2, 3, 4, 5];
+
+for (const i of array) {
+  
+  document.body.innerText +=1;
+
+}
+
+array.forEach(item=> {
+document.body.innerText +=item
+})
+
+
+const newArray = array.map(item =>{
+  return item *2;
+})
+
+document.body.innerText = JSON.stringify(newArray)
