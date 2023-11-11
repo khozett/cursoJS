@@ -15,10 +15,10 @@
 
 
 //document.body.innerText = (
-  //'name' in user;
-  //Object.values(user);
-  //JSON.stringify(Object.values(user));
-  //JSON.stringify(Object.entries(user));
+//'name' in user;
+//Object.values(user);
+//JSON.stringify(Object.values(user));
+//JSON.stringify(Object.entries(user));
 
 //
 
@@ -72,19 +72,34 @@ const user = {
 
 const array = [1, 2, 3, 4, 5];
 
-for (const i of array) {
-  
-  document.body.innerText +=1;
+/*for (const i of array) {
+
+  document.body.innerText += 1;
 
 }
 
-array.forEach(item=> {
-document.body.innerText +=item
+array.forEach(item => {
+  document.body.innerText += item
 })
 
 
-const newArray = array.map(item =>{
-  return item *2;
-})
+const newArray = array.map(item => {
+  if (item % 2 === 0) {
 
-document.body.innerText = JSON.stringify(newArray)
+    return item * 10;
+  }
+  return item;
+}
+
+)
+ */
+
+
+//filter
+
+const novoArray = array
+.filter(item => item % 2 ===0)
+.map(item => item * 10)
+
+document.body.innerText = JSON.stringify(novoArray);
+
