@@ -97,9 +97,20 @@ const newArray = array.map(item => {
 
 //filter
 
-const novoArray = array
+/*const novoArray = array
 .filter(item => item % 2 ===0)
 .map(item => item * 10)
 
 document.body.innerText = JSON.stringify(novoArray);
 
+ */
+
+//reduce
+
+const soma = array.reduce( (acc, item) => {
+
+
+
+}, 0)
+
+document.body.innerText = JSON.stringify()
